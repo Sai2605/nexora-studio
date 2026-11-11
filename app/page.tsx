@@ -624,8 +624,7 @@ export default function Home() {
             </p>
           </div>
           <p className="text-xs text-slate-500">
-            © {new Date().getFullYear()} Nexora Studio. All rights reserved.
-          </p>
+© 2026 Nexora Studio. All rights reserved.          </p>
         </div>
       </footer>
     </main>
