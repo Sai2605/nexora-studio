@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState, type FormEvent } from "react";
@@ -55,8 +54,7 @@ const projects = [
     type: "Website",
     color: "from-emerald-600/30 to-slate-950",
     original: "We are a company doing many digital services.",
-    improved:
-      "Smart Digital Solutions for Businesses Ready to Grow.",
+    improved: "Smart Digital Solutions for Businesses Ready to Grow.",
     result: "Stronger headline and positioning",
   },
 ];
@@ -94,9 +92,21 @@ const services = [
 
 const steps = [
   ["01", "Share your content", "Send your document and explain what you need."],
-  ["02", "Get a clear quotation", "We confirm scope, pricing and delivery time."],
-  ["03", "Editing & quality review", "We refine your content and manually review the result."],
-  ["04", "Receive your final work", "Get your polished document in your preferred format."],
+  [
+    "02",
+    "Get a clear quotation",
+    "We confirm scope, pricing and delivery time.",
+  ],
+  [
+    "03",
+    "Editing & quality review",
+    "We refine your content and manually review the result.",
+  ],
+  [
+    "04",
+    "Receive your final work",
+    "Get your polished document in your preferred format.",
+  ],
 ];
 
 export default function Home() {
@@ -109,7 +119,7 @@ export default function Home() {
     e.preventDefault();
 
     const text = [
-      "Hello Nexora Studio!",
+      "Hello Orqenza Studio!",
       `Name: ${name}`,
       `Email: ${email}`,
       `Service: ${service}`,
@@ -118,7 +128,7 @@ export default function Home() {
 
     window.open(
       `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`,
-      "_blank"
+      "_blank",
     );
   }
 
@@ -128,17 +138,25 @@ export default function Home() {
       <header className="sticky top-0 z-50 border-b border-white/10 bg-[#080D18]/90 backdrop-blur-xl">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 lg:px-8">
           <a href="#" className="text-xl font-black tracking-[0.15em]">
-            NEXORA<span className="text-blue-500">.</span>
+            ORQENZA<span className="text-blue-500">.</span>
             <span className="ml-2 text-xs font-medium tracking-[0.3em] text-slate-400">
               STUDIO
             </span>
           </a>
 
           <div className="hidden items-center gap-8 text-sm text-slate-300 md:flex">
-            <a href="#services" className="hover:text-blue-400">Services</a>
-            <a href="#portfolio" className="hover:text-blue-400">Portfolio</a>
-            <a href="#process" className="hover:text-blue-400">Process</a>
-            <a href="#pricing" className="hover:text-blue-400">Pricing</a>
+            <a href="#services" className="hover:text-blue-400">
+              Services
+            </a>
+            <a href="#portfolio" className="hover:text-blue-400">
+              Portfolio
+            </a>
+            <a href="#process" className="hover:text-blue-400">
+              Process
+            </a>
+            <a href="#pricing" className="hover:text-blue-400">
+              Pricing
+            </a>
           </div>
 
           <a
@@ -173,8 +191,8 @@ export default function Home() {
 
             <p className="mt-8 max-w-xl text-lg leading-8 text-slate-400">
               We transform rough drafts into clear, polished and professional
-              content. Better writing, thoughtful editing and digital
-              solutions for growing businesses.
+              content. Better writing, thoughtful editing and digital solutions
+              for growing businesses.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -217,8 +235,8 @@ export default function Home() {
                     ORIGINAL DRAFT
                   </p>
                   <div className="rounded-xl border border-white/5 bg-white/5 p-5 text-sm leading-7 text-slate-400">
-                    Our company provide professional services and help
-                    business to improve their growth.
+                    Our company provide professional services and help business
+                    to improve their growth.
                   </div>
                 </div>
 
@@ -259,7 +277,9 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl gap-8 text-center sm:grid-cols-3">
           <div>
             <p className="text-2xl font-bold">Content first</p>
-            <p className="mt-2 text-sm text-slate-400">Clear and purposeful writing</p>
+            <p className="mt-2 text-sm text-slate-400">
+              Clear and purposeful writing
+            </p>
           </div>
           <div>
             <p className="text-2xl font-bold">Quality focused</p>
@@ -267,7 +287,9 @@ export default function Home() {
           </div>
           <div>
             <p className="text-2xl font-bold">Client focused</p>
-            <p className="mt-2 text-sm text-slate-400">Solutions built around your needs</p>
+            <p className="mt-2 text-sm text-slate-400">
+              Solutions built around your needs
+            </p>
           </div>
         </div>
       </section>
@@ -285,8 +307,8 @@ export default function Home() {
               built around you.
             </h2>
             <p className="mt-5 leading-7 text-slate-400">
-              From a single article to your complete business content,
-              we help make every word work harder.
+              From a single article to your complete business content, we help
+              make every word work harder.
             </p>
           </div>
 
@@ -318,7 +340,10 @@ export default function Home() {
       </section>
 
       {/* PORTFOLIO */}
-      <section id="portfolio" className="scroll-mt-24 bg-[#0D1422] px-5 py-24 lg:px-8">
+      <section
+        id="portfolio"
+        className="scroll-mt-24 bg-[#0D1422] px-5 py-24 lg:px-8"
+      >
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
             <div>
@@ -344,7 +369,9 @@ export default function Home() {
                 key={project.number}
                 className="overflow-hidden rounded-2xl border border-white/10 bg-[#111B2D]"
               >
-                <div className={`bg-gradient-to-br ${project.color} p-7 sm:p-10`}>
+                <div
+                  className={`bg-gradient-to-br ${project.color} p-7 sm:p-10`}
+                >
                   <div className="flex justify-between text-xs font-semibold tracking-widest text-blue-200">
                     <span>{project.category}</span>
                     <span>{project.number}</span>
@@ -359,7 +386,7 @@ export default function Home() {
                     </p>
                     <div className="mt-6 h-1 w-16 rounded bg-blue-400" />
                     <p className="mt-4 text-xs text-slate-400">
-                      {project.type} · Nexora Studio
+                      {project.type} · Orqenza Studio
                     </p>
                   </div>
                 </div>
@@ -414,7 +441,10 @@ export default function Home() {
       </section>
 
       {/* PRICING */}
-      <section id="pricing" className="scroll-mt-24 bg-[#0D1422] px-5 py-24 lg:px-8">
+      <section
+        id="pricing"
+        className="scroll-mt-24 bg-[#0D1422] px-5 py-24 lg:px-8"
+      >
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-2xl text-center">
             <p className="text-sm font-semibold tracking-[0.25em] text-blue-400">
@@ -435,20 +465,34 @@ export default function Home() {
                 name: "Proofreading",
                 price: "₹499",
                 detail: "Starting price",
-                features: ["Grammar correction", "Spelling review", "Basic proofreading"],
+                features: [
+                  "Grammar correction",
+                  "Spelling review",
+                  "Basic proofreading",
+                ],
               },
               {
                 name: "Article Editing",
                 price: "₹799",
                 detail: "Up to 1,000 words",
-                features: ["Grammar and clarity", "Sentence improvement", "Tone refinement", "One revision"],
+                features: [
+                  "Grammar and clarity",
+                  "Sentence improvement",
+                  "Tone refinement",
+                  "One revision",
+                ],
                 featured: true,
               },
               {
                 name: "SEO Blog Content",
                 price: "₹1,499",
                 detail: "Starting price",
-                features: ["Content structure", "SEO-focused writing", "Heading optimization", "Quality review"],
+                features: [
+                  "Content structure",
+                  "SEO-focused writing",
+                  "Heading optimization",
+                  "Quality review",
+                ],
               },
             ].map((plan) => (
               <div
@@ -496,12 +540,27 @@ export default function Home() {
 
           <div className="mt-10 space-y-6">
             {[
-              ["Do you use AI for editing?", "We use AI-assisted tools where appropriate, combined with human review to check meaning, accuracy, readability and quality."],
-              ["How do I get a quotation?", "Send your content, word count and requirements through our enquiry form. We will review the scope and provide a quotation."],
-              ["How long does editing take?", "Delivery depends on document length and complexity. We confirm a realistic timeline before accepting the project."],
-              ["Can I request revisions?", "Yes. Revision scope and the number of included rounds are agreed before the project starts."],
+              [
+                "Do you use AI for editing?",
+                "We use AI-assisted tools where appropriate, combined with human review to check meaning, accuracy, readability and quality.",
+              ],
+              [
+                "How do I get a quotation?",
+                "Send your content, word count and requirements through our enquiry form. We will review the scope and provide a quotation.",
+              ],
+              [
+                "How long does editing take?",
+                "Delivery depends on document length and complexity. We confirm a realistic timeline before accepting the project.",
+              ],
+              [
+                "Can I request revisions?",
+                "Yes. Revision scope and the number of included rounds are agreed before the project starts.",
+              ],
             ].map(([question, answer]) => (
-              <details key={question} className="group border-b border-white/10 pb-6">
+              <details
+                key={question}
+                className="group border-b border-white/10 pb-6"
+              >
                 <summary className="cursor-pointer list-none text-lg font-semibold">
                   {question}
                   <span className="float-right text-blue-400">+</span>
@@ -514,7 +573,10 @@ export default function Home() {
       </section>
 
       {/* CONTACT */}
-      <section id="contact" className="scroll-mt-24 bg-[#0D1422] px-5 py-24 lg:px-8">
+      <section
+        id="contact"
+        className="scroll-mt-24 bg-[#0D1422] px-5 py-24 lg:px-8"
+      >
         <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-2">
           <div>
             <p className="text-sm font-semibold tracking-[0.25em] text-blue-400">
@@ -526,8 +588,8 @@ export default function Home() {
               in mind?
             </h2>
             <p className="mt-6 max-w-md leading-8 text-slate-400">
-              Tell us what you are working on. Share your requirements and
-              get a quotation for your project.
+              Tell us what you are working on. Share your requirements and get a
+              quotation for your project.
             </p>
             <div className="mt-10 space-y-5 text-sm text-slate-300">
               <p>✉ &nbsp; Professional project enquiries</p>
@@ -617,14 +679,15 @@ export default function Home() {
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-5 sm:flex-row sm:items-center">
           <div>
             <p className="font-black tracking-[0.15em]">
-              NEXORA<span className="text-blue-500">.</span> STUDIO
+              ORQENZA<span className="text-blue-500">.</span> STUDIO
             </p>
             <p className="mt-2 text-xs text-slate-500">
               Ideas. Refined. Delivered.
             </p>
           </div>
           <p className="text-xs text-slate-500">
-© 2026 Nexora Studio. All rights reserved.          </p>
+            © 2026 Orqenza Studio. All rights reserved.{" "}
+          </p>
         </div>
       </footer>
     </main>
