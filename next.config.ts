@@ -4,7 +4,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* GitHub Pages static export */
   output: "export",
-  basePath: "/nexora-studio",
+  basePath: "/orqenza-studio",
   trailingSlash: true,
 
   images: {
